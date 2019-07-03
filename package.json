@@ -9,7 +9,7 @@
   "private": false,
   "scripts": {
     "start": "electron .",
-    "package": "electron-packager ./ --platform=darwin --arch=x64 --out=out --icon=./icon.icns --overwrite"
+    "package": "electron-packager ./ --platform=darwin --out=build --app-version=0.0.1 --icon=./assets/app-icon.icns --overwrite"
   },
   "dependencies": {},
   "devDependencies": {
