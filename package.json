@@ -11,7 +11,6 @@
     "start": "electron .",
     "package": "electron-packager ./ --platform=darwin --out=build --app-version=0.0.1 --icon=./assets/app-icon.icns --overwrite"
   },
-  "dependencies": {},
   "devDependencies": {
     "electron-packager": "^14.0.1",
     "electron-prebuilt": "^1.4.13"

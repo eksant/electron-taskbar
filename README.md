@@ -6,7 +6,12 @@ Simple taskbar build with electron
 
 ## How to Usage
 ```bash
-$ git@github.com:eksant/electron-taskbar.git
+$ git clone git@github.com:eksant/electron-taskbar.git
 $ cd electron-taskbar
 $ npm run start or yarn start
+```
+
+## How to Build
+```
+$ npm run package or yarn package
 ```
