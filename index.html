@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Menus</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      const { remote } = require("electron");
+      const { Tray, Menu } = remote;
+
+      const path = require("path");
+      const assetsDirectory = path.join(__dirname, "assets");
+      const trayIcon = new Tray(path.join(assetsDirectory, "zoobc-16.png"));
+
+      const trayMenuTemplate = [
+        {
+          label: "Percayalah Eksa GANTENG !!!",
+          enabled: false
+        },
+        {
+          label: "Settings",
+          click: function() {
+            alert("Clicked on settings");
+          }
+        },
+        {
+          label: "Help",
+          click: function() {
+            alert("Clicked on Help");
+          }
+        }
+      ];
+
+      let trayMenu = Menu.buildFromTemplate(trayMenuTemplate);
+      trayIcon.setContextMenu(trayMenu);
+    </script>
+  </body>
+</html>

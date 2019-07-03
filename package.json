@@ -1,0 +1,19 @@
+{
+  "name": "electron-taskbar",
+  "version": "0.0.1",
+  "description": "simple taskbar build with electron",
+  "main": "main.js",
+  "repository": "git@github.com:eksant/electron-taskbar.git",
+  "author": "eksant <eksant@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager ./ --platform=darwin --arch=x64 --out=out --icon=./icon.icns --overwrite"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron-packager": "^14.0.1",
+    "electron-prebuilt": "^1.4.13"
+  }
+}
